@@ -1,6 +1,12 @@
+import Header from "../../Components/Header/Header"
+import TextField from "../../Components/TextField/TextField"
+
 function EventPage(){
     return(
-        <section>EventPage</section>
+        <section>
+            <Header />
+            <TextField />
+        </section>
     )
 }
 
