@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './assets/icons.js'
 import LandingPage from './Pages/LandingPage/LandingPage';
 import EventPage from './Pages/EventsPage/EventsPage';
 import OrderPage from './Pages/OrderPage/OrderPage';
