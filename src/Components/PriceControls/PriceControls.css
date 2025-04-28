@@ -1,0 +1,61 @@
+.price-controls{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.price-controls__wrapper{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #F56B9A;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.event-detail__controls{
+    border-top: solid 1px #F56B9A;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.total-price{
+    padding: 20px;
+}
+
+.btn-add,
+.btn-sub {
+  background: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: inherit; /* Ärver textfärg från föräldern */
+}
+
+.btn-add{
+    padding: 10px;
+    padding-left: 35px;
+    border: none;    
+    border-left: #F56B9A solid 1px;
+}
+
+.btn-sub{
+    padding: 10px;
+    padding-right: 35px;
+    border: none;    
+    border-right: #F56B9A solid 1px;
+}
+
