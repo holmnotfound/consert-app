@@ -1,0 +1,83 @@
+.event {
+    display: grid;
+    grid-template-areas: 
+    "date info info" ;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 2em;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+  }
+
+  .event__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .event__time-price{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+  
+.event__date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    grid-area: date;
+}
+
+.event__day,
+.event__month{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.event__day{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.event__month{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.event__info{
+    margin-left: 30px;
+    grid-area: info;
+}
+
+.event__name{
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-shadow:
+    1px 1px 1px #F56B9A,
+    2px 2px 1px #F56B9A;
+}
+
+.event__where{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #d0d0d0;
+}
+
+.event__time{
+    font-size: 14px;
+    font-weight: 600;
+    color: #d0d0d0;
+}
+
+.event__price{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--details);
+}
+  
