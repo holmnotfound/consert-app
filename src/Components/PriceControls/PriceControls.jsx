@@ -23,6 +23,7 @@ function PriceControls() {
   const event = events.find((e) => e.id === id);
   const quantity = cart.find((item) => item.id === id)?.quantity || 0;
   const totalPrice = getTotalPrice(id);
+  console.log(totalPrice)
 
   if (!event) return <p>Eventet hittades inte</p>;
 

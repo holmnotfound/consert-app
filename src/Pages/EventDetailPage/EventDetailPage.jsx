@@ -3,7 +3,7 @@ import EventDetailContent from "../../Components/EventDetailContent/EventDetailC
 function EventDetailPage(){
     return(
         <section>
-            <Header />
+            <Header title="Event" />
             <EventDetailContent />
         </section>
     )

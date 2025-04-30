@@ -5,7 +5,7 @@ import EventsList from "../../Components/EventList/EventList"
 function EventPage(){
     return(
         <section>
-            <Header />
+            <Header title="Events" />
             <TextField />
             <EventsList />
         </section>

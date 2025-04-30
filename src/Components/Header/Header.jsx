@@ -1,9 +1,11 @@
+import NavBar from "../Navbar/NavBar"
 import TitleForPage from "../TitleForPage/TitleForPage"
 
-function Header (){
+function Header ({title}){
     return(
         <section className="header">
-            <TitleForPage Title='Events' />
+            <TitleForPage title={title} />
+            <NavBar />
         </section>
     )
 }
