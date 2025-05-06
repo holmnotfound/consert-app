@@ -47,13 +47,6 @@ function Ticket() {
     usedTicketIDs.add(newID);
     return newID;
   };
-  
-
-
-  /*const generateTicketID = () => {
-    const uuid = uuidv4();
-    return uuid.slice(0, 5).toUpperCase();
-  };*/
 
   const getEventSectionLetter = (eventId) => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
