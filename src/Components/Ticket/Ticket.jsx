@@ -36,10 +36,24 @@ function Ticket() {
     return <p className="order-cart__error-msg">Din kundvagn är tom.</p>;
   }
 
+  const usedTicketIDs = new Set();
+
   const generateTicketID = () => {
+    let newID;
+    do {
+      newID = uuidv4().slice(0, 5).toUpperCase();
+    } while (usedTicketIDs.has(newID));
+  
+    usedTicketIDs.add(newID);
+    return newID;
+  };
+  
+
+
+  /*const generateTicketID = () => {
     const uuid = uuidv4();
     return uuid.slice(0, 5).toUpperCase();
-  };
+  };*/
 
   const getEventSectionLetter = (eventId) => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -73,7 +87,8 @@ function Ticket() {
       <section className="ticket-list">
         {cart.flatMap((item, itemIndex) =>
           Array.from({ length: item.quantity }, (_, index) => {
-            const ticketID = ticketIDs[itemIndex + index] || generateTicketID();
+            const flatIndex = cart.slice(0, itemIndex).reduce((sum, item) => sum + item.quantity, 0) + index;
+            const ticketID = ticketIDs[flatIndex] || `Saknas:${flatIndex}`;
             const sectionLetter = getEventSectionLetter(item.id);
             const seatNumber = getSeatNumber(item.id, index);
 
