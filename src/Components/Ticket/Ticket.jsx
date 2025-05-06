@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import useCartStore from "../../Stores/useCartStore";
 import Confetti from "react-confetti";
-import { v4 as uuidv4 } from "uuid"; // Importera uuid
+import { v4 as uuidv4 } from "uuid"; 
 import "./Ticket.css";
 
 function Ticket() {
