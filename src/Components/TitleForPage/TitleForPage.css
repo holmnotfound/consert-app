@@ -1,0 +1,8 @@
+.header__title{
+    font-family: 'Sansita One', sans-serif;
+        color: var(--title);
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        
+}

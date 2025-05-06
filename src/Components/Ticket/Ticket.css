@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.order-confirmation{
+    font-family: var(--title-font);
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    text-shadow:
+    1px 1px 1px #F56B9A,
+    2px 2px 1px #F56B9A;
+}
+
+.ticket-list{
+    color: white;
+}
+
+.ticket-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .ticket-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+  }
+
+  .item__mini-title{
+    margin-top: 20px;
+    font-family: 'Fira Sans', sans-serif ;
+    color: black;
+    font-weight: 700;
+    opacity: 40%;
+    font-size: 10px;
+  }
+  
+  .item__name {
+    font-family: var(--title-font);
+    font-size: 26px;
+    margin:0;
+    color: var(--title)
+  }
+
+  .item__where{
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 70%;
+  }
+
+  .item__date, .item__from, .item__to{
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 70%;
+    margin: 0;
+  }
+
+  .item__when{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item__section{
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 60%;
+    margin: 0;
+  }
+
+  .item__scan{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .item__bar-code{
+    margin-top: 40px;
+    color: black;
+    font-family: 'Libre Barcode 128', cursive;
+    font-size: 100px;
+    height: 80px;
+  }
+
+  .item__id{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+    opacity: 40%;
+  }
+
+  

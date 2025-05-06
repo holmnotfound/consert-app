@@ -1,0 +1,19 @@
+
+
+  .nav-item {
+    font-family: "Fira Sans", sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    padding: 0.5rem;
+  }
+  
+  .nav-item:hover {
+    color: var(--title);
+  }
+  
+  .nav-item.active {
+    font-weight: bold;
+    color: var(--bg-color);
+    border-bottom: 2px solid var(--title);
+  }
