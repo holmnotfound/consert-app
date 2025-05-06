@@ -6,7 +6,7 @@
     border-radius: 3px;
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.4rem;
-    color: var(--text);
+    color: var(--bg-color);
     font-weight: 600;
     cursor: pointer;
 }

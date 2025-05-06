@@ -42,13 +42,14 @@ function EventTicketAdjuster() {
                   className="btn-sub"
                   onClick={() => removeFromCart(item.id)}
                   disabled={quantity === 0}
+                  aria-label="ta bort en biljett"
                 >
                   <FontAwesomeIcon icon="minus" />
                 </button>
 
                 <span className="quantity">{quantity}</span>
 
-                <button className="btn-add" onClick={() => addToCart(item)}>
+                <button aria-label="lägg till en biljett" className="btn-add" onClick={() => addToCart(item)}>
                   <FontAwesomeIcon icon="plus" />
                 </button>
               </div>
@@ -59,7 +60,7 @@ function EventTicketAdjuster() {
       <section className="ticket-adjuster__footer">
         <h4 className="ticket-adjuster__footer-total-price">Totalt belopp: {totalCartPrice} sek</h4>
 
-        <Button page="/Ticket" text="Skicka Order" />
+        <Button aria-label="skicka order" page="/Ticket" text="Skicka Order" />
       </section>
     </section>
   );

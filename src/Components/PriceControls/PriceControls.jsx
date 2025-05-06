@@ -32,18 +32,18 @@ function PriceControls() {
       <section className='price-controls__wrapper'>
         <span className='total-price'>{totalPrice} sek</span>
         <div className="event-detail__controls">
-        <button className="btn-sub" onClick={() => removeFromCart(event.id)} disabled={quantity === 0}>
+        <button aria-label="remove from cart minus" className="btn-sub" onClick={() => removeFromCart(event.id)} disabled={quantity === 0}>
       <FontAwesomeIcon icon="minus" />
     </button>
 
     <span className="quantity">{quantity}</span>
 
-    <button className="btn-add" onClick={() => addToCart(event)}>
+    <button aria-label="add to cart with a plus" className="btn-add" onClick={() => addToCart(event)}>
       <FontAwesomeIcon icon="plus" />
     </button>
       </div>
       </section>
-      <Button onClick={() => addToCart(event)} page="/Order" text="Lägg till i kundvagn" />
+      <Button aria-label="add to cart" onClick={() => addToCart(event)} page="/Order" text="Lägg till i kundvagn" />
     </section>
   );
 }
